@@ -100,3 +100,13 @@ hr {
 input, select {
     vertical-align:middle;
 }
+*{ 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
+}
+select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    border:none;
+}
