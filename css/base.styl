@@ -1,7 +1,7 @@
 .wrap
     min-height 100vh
     font-size 0
-    position relative
+    position relative 
     .ctx-body
         height calc(100vh - 1.2rem /* 120/100 */)
         overflow-y scroll
@@ -125,6 +125,151 @@
                     font-size .24rem /* 24/100 */
                     color #ccc
                     margin-top .13rem /* 13/100 */
+            .search-box
+                width 100%
+                height .6rem /* 60/100 */
+                border-radius .3rem /* 30/100 */
+                border .02rem /* 2/100 */solid #D6D6D6
+                margin-top .4rem /* 40/100 */
+                display flex
+                align-items center
+                padding-left .3rem /* 30/100 */
+                padding-right .24rem /* 24/100 */
+                input
+                    border 0
+                    outline none
+                    height .4rem /* 40/100 */
+                    flex 1
+                .search-icon
+                    display block
+                    width .4rem /* 40/100 */
+                    height .4rem /* 40/100 */
+                    background url('../img/icon/search-icon.png')
+                    background-size .4rem /* 40/100 */.4rem /* 40/100 */
+            .nav-box-wrap
+                margin-top .5rem /* 50/100 */
+                margin-bottom .5rem /* 50/100 */
+                .main-nav-wrap
+                    overflow-x scroll
+                    .main-nav
+                        margin-bottom .46rem /* 46/100 */
+                        white-space nowrap
+                        li
+                            display inline-block
+                            margin-right .4rem /* 40/100 */
+                            a
+                                font-size .32rem /* 32/100 */
+                                color #333333
+                                line-height .42rem /* 42/100 */
+                                text-decoration none
+                        .active a
+                            color #0076FF
+                            position relative
+                            &:after
+                                content ''
+                                display block
+                                position absolute
+                                bottom 0
+                                left .07rem /* 7/100 */
+                                bottom -0.13rem /* 13/100 */
+                                width calc(100% - .14rem /* 14/100 */)
+                                height .08rem /* 8/100 */
+                                border-radius .05rem /* 5/100 */
+                                background #0076FF
+                .sub-nav
+                    margin-bottom .3rem /* 30/100 */
+                    white-space nowrap
+                    display flex
+                    align-items center
+                    overflow-x scroll
+                    li
+                        position relative
+                        display inline-block
+                        margin-right .36rem /* 36/100 */
+                        a
+                            font-size .26rem /* 26/100 */
+                            color #333
+                            line-height .44rem /* 44/100 */
+                            text-decoration none
+                    .active 
+                        margin-right .22rem /* 22/100 */
+                        a
+                            color #0076FF
+                            padding .045rem /* 4.5/100 */.18rem /* 18/100 */
+                            line-height .35rem /* 35/100 */
+                            background #F3F3F3
+                            border-radius .22rem /* 22/100 */
+            .search
+                margin-bottom .2rem /* 20/100 */
+            .simple-fall-wrap
+                display flex
+                flex-wrap wrap
+                .simple-fall
+                    text-align center
+                    margin-right .1rem /* 10/100 */
+                    margin-bottom .4rem /* 40/100 */
+                    width 2.23rem /* 223/100 */
+                    a
+                        display block
+                        width 2.23rem /* 223/100 */
+                        height 2.98rem /* 298/100 */
+                        border-radius .1rem /* 10/100 */
+                    for mv in (1..6)
+                        .simple-fall-img-mv{mv}
+                            background url("../img/section/mv"+mv+".png")
+                            background-size cover
+                            background-position center
+                    &:nth-child(3n)
+                        margin-right 0
+                    .simple-fall-name
+                        font-size .24rem /* 24/100 */
+                        color #333
+                        width 100%
+                        padding 0 .07rem /* 7/100 */
+                        line-height .3rem /* 30/100 */
+                        margin-top .23rem /* 23/100 */
+                        white-space nowrap
+                        text-overflow ellipsis
+                        overflow hidden
+            .search-list-wrap
+                .search-item
+                    display flex
+                    margin-bottom .5rem /* 50/100 */
+                    a
+                        display block
+                        width 2.7rem /* 270/100 */
+                        height 3.6rem /* 360/100 */
+                        margin-right .3rem /* 30/100 */
+                        border-radius .1rem /* 10/100 */
+                    for mv in (1..6)
+                        .search-item-mv{mv}
+                            background url("../img/section/mv"+mv+".png")
+                            background-size cover
+                            background-position center
+                    .search-item-info
+                        flex 1
+                        h3
+                            font-size .36rem /* 36/100 */
+                            color #333
+                            line-height .47rem /* 47/100 */
+                            margin-bottom .14rem /* 14/100 */
+                        p
+                            font-size .24rem /* 24/100 */
+                            line-height .42rem /* 42/100 */
+                            color #666
+                            width 3.6rem /* 360/100 */
+                            text-overflow ellipsis
+                            overflow hidden
+                            white-space nowrap
+                        button
+                            width 2.4rem /* 240/100 */
+                            height .66rem /* 66/100 */
+                            color #0076FF
+                            border .02rem /* 2/100 */ solid #D6D6D6
+                            border-radius .14rem /* 14/100 */
+                            outline none
+                            background #fff
+                            margin-top .24rem /* 24/100 */
     .ctx-footer
         height 1.2rem /* 120/100 */
         display flex
