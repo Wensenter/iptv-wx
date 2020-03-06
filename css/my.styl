@@ -3,7 +3,8 @@
     width 100%
     height 1.97rem /* 197/100 */
     background url('../img/section/accountInfo-bg.png')
-    background-size 100%
+    background-size cover
+    background-position center
     position relative
     .status
         width 6.9rem /* 690/100 */
@@ -43,6 +44,12 @@
             font-size .24rem /* 24/100 */
             color #fff
             border 0
+        .hiddenAccount
+            display block
+            width .32rem /* 32/100 */
+            height .32rem /* 32/100 */
+            background url('../img/icon/hiddenAccount-icon.png')
+            background-size .32rem /* 32/100 */.32rem /* 32/100 */
 .main
     dl
         margin .4rem /* 40/100 */0
@@ -51,13 +58,13 @@
             color #6D6D6D
             line-height .37rem /* 37/100 */
         dd ul
-            padding .4rem /* 40/100 */ .37rem /* 37/100 */
+            padding .4rem /* 40/100 */ 0
             display flex
-            justify-content space-between
+            justify-content flex-start
             border-bottom .02rem /* 2/100 */ solid #E9E9E9
             li a
                 display inline-block
-                width 1rem /* 100/100 */
+                width 1.74rem /* 174/100 */
                 height 1.25rem /* 125/100 */
                 text-decoration none
                 text-align center
@@ -65,7 +72,7 @@
                     height .64rem /* 64/100 */
                     width .64rem /* 64/100 */
                 span
-                    display inline-block
+                    display block
                     font-size .24rem /* 24/100 */
                     color #333
                     margin-top .3rem /* 30/100 */

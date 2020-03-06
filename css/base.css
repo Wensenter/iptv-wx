@@ -109,6 +109,7 @@
 .wrap .ctx-body .main .fall-wrap .fall-head .more {
   font-size: 0.24rem /* 24/100 */;
   color: #666;
+  text-decoration: none;
 }
 .wrap .ctx-body .main .fall-wrap .fall-body {
   margin-top: 0.2rem /* 20/100 */;
@@ -440,6 +441,7 @@
 }
 .wrap .ctx-footer ul li>a i {
   display: block;
+  margin: 0 auto;
   width: 0.4rem /* 40/100 */;
   height: 0.4rem /* 40/100 */;
 }

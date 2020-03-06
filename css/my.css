@@ -109,6 +109,7 @@
 .wrap .ctx-body .main .fall-wrap .fall-head .more {
   font-size: 0.24rem /* 24/100 */;
   color: #666;
+  text-decoration: none;
 }
 .wrap .ctx-body .main .fall-wrap .fall-body {
   margin-top: 0.2rem /* 20/100 */;
@@ -440,6 +441,7 @@
 }
 .wrap .ctx-footer ul li>a i {
   display: block;
+  margin: 0 auto;
   width: 0.4rem /* 40/100 */;
   height: 0.4rem /* 40/100 */;
 }
@@ -506,7 +508,8 @@
   width: 100%;
   height: 1.97rem /* 197/100 */;
   background: url("../img/section/accountInfo-bg.png");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 .accountInfo-box .status {
@@ -553,6 +556,13 @@
   color: #fff;
   border: 0;
 }
+.accountInfo-box .status .hiddenAccount {
+  display: block;
+  width: 0.32rem /* 32/100 */;
+  height: 0.32rem /* 32/100 */;
+  background: url("../img/icon/hiddenAccount-icon.png");
+  background-size: 0.32rem /* 32/100 */ 0.32rem /* 32/100 */;
+}
 .main dl {
   margin: 0.4rem /* 40/100 */ 0;
 }
@@ -562,14 +572,14 @@
   line-height: 0.37rem /* 37/100 */;
 }
 .main dl dd ul {
-  padding: 0.4rem /* 40/100 */ 0.37rem /* 37/100 */;
+  padding: 0.4rem /* 40/100 */ 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 0.02rem /* 2/100 */ solid #e9e9e9;
 }
 .main dl dd ul li a {
   display: inline-block;
-  width: 1rem /* 100/100 */;
+  width: 1.74rem /* 174/100 */;
   height: 1.25rem /* 125/100 */;
   text-decoration: none;
   text-align: center;
@@ -579,7 +589,7 @@
   width: 0.64rem /* 64/100 */;
 }
 .main dl dd ul li a span {
-  display: inline-block;
+  display: block;
   font-size: 0.24rem /* 24/100 */;
   color: #333;
   margin-top: 0.3rem /* 30/100 */;
